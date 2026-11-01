@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+class rectangle{
+    public:
+    int length;
+    int breadth;
+    float area;
+    void input(){
+        cout<<"Enter length";
+        cin>>length;
+        cout<<"Enter breadth";
+        cin>>breadth;
+    }
+    void display(){
+        area=length*breadth;
+        cout<<"Area of rectangle:"<<area<<endl;
+    }
+};
+int main(){
+    rectangle r;
+    r.input();
+    r.display();
+    return 0;
+}
